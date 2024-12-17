@@ -1,0 +1,117 @@
+@import url();
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: radial-gradient( #832de2, #832de2);
+}
+
+.container{
+    width: 300px;
+    height: 500px;
+    padding: 20px;
+    background-color:#fff;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.5);
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+}
+
+form .user-box{
+    margin-top: 10px;
+}
+
+form .user-box input{
+    width: 100%;
+    padding: 10px;
+    color: #555;
+    background: transparent;
+    font-size: 16px;
+    margin-bottom: 30px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid indigo;
+}
+
+form .user-box input:focus{
+    top: 10px;  
+    left: 0;
+    font-size: 16px;
+    color: #555;
+    pointer-events: none;
+    transition: all .5s ease;
+}
+
+form .user-box input:focus ~ label,
+form .user-box input:valid ~ label{
+    top: -15px;
+    left: 0;
+    color: indigo;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+form a{
+    font-size: 12px;
+    float: right;
+    margin-top: 20px;
+}
+
+span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+span label{
+    padding: 5px 50px;
+    font-size: 18px;
+    background-color: indigo;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+
+span label:hover{
+    opacity: .9;
+}
+
+.social{
+    margin-top: 60px;
+    cursor: pointer;
+}
+
+.heading{
+    width: 100%;
+    color: indigo;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+hr{
+    height: 3px;
+    background-color: indigo;
+    width: 30%;
+}
+
+.icons{
+    font-size: 26px;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    margin-top: 20px;
+    color:indigo;
+}
